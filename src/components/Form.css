@@ -1,0 +1,315 @@
+:root {
+    --btn_font: 2vw;
+    --btn_height: 4vw;
+    --head_size: 10vw;
+    --body_size: 25vw;
+    --form__field: 7vw;
+    --form__field__label: 1.75vw;
+    --input__size: 2.5vw;
+    --input_font: 1.25vw;
+    --btn_container_size: 7vw;
+    --head_font: 3vw;
+    --form__container__size:35vw;
+    --xl:1;/* MENOR A 600px */
+    --l:1.5;/* entre 600px y 768px */
+    --m:2;/* entre 600px y 768px */
+    --s:2.5;/* entre 768px y 992px */
+    --xs:3;/* entre 992px y 1200px */
+}
+
+.form__container {
+    color: rgb(185, 188, 189);
+    background-color: rgb(252, 252, 252);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.form__container>form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form__container .form__head {
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 10vw; */
+}
+
+.form__container .form__head .form__title {
+    /* font-size: 3vw; */
+}
+
+.form__container .form__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 25vw; */
+}
+
+/*INPUTS AND LABELS*/
+
+.form__field {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 85%;
+    /* min-height: 7vw; */
+}
+
+.form__field>label {
+    font-style: italic;
+    /* font-size: 1.75vw; */
+}
+
+.form__field>input {
+    color: rgb(185, 188, 189);
+    border-radius: 10px;
+    border: none;
+    /* min-height: 2.5vw;
+    font-size: 1.25vw; */
+}
+
+.form__field>input::placeholder {
+    text-align: center;
+    color: rgb(185, 188, 189);
+
+}
+
+.form__field>input:focus {
+    border: none;
+    outline: none;
+}
+
+/*BUTTONS*/
+.button__container {
+    display: flex;
+    align-items: flex-end;
+    width: 60%;
+    /* min-height: 7vw; */
+}
+
+.button__container .button__login {
+    border: none;
+    border-radius: 35px;
+    width: 100%;
+    font-weight: bold;
+    color: white;
+    background-color: blueviolet;
+}
+
+/* If the screen size is 601px or more, set the font-size of <div> to 80px */
+
+@media only screen and (max-width: 600px) {
+    .form__container {
+        min-height: calc(var(--form__container__size)*var(--xs));
+        aspect-ratio: 15/24;
+    }
+
+    .form__container .form__head {
+        min-height: calc(var(--head_size)*var(--xs));
+    }
+    .form__container .form__head .form__title {
+        font-size:calc(var(--head_font)*var(--xs));
+    }
+
+    .form__container .form__body {
+        min-height: calc(var(--body_size)*var(--xs));
+    }
+
+    .form__field {
+        min-height: calc(var(--form__field)*var(--xs));
+    }
+
+    .form__field>label {
+        font-size: calc(var(--form__field__label)*var(--xs));
+    }
+
+    .form__field>input {
+        min-height: calc(var(--input__size)*var(--xs));
+        font-size: calc(var(--input_font) *var(--xs));
+    }
+
+    .button__container {
+        min-height: calc(var(--btn_container_size)*var(--xs));
+    }
+
+    .button__container .button__login {
+        font-size: calc(var(--btn_font)*var(--xs));
+        min-height: calc(var(--btn_height)*var(--xs));
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .form__container {
+        min-height: calc(var(--form__container__size)*var(--s));
+        aspect-ratio: 15/22;
+    }
+
+    .form__container .form__head {
+        min-height: calc(var(--head_size)*var(--s));
+    }
+    .form__container .form__head .form__title {
+        font-size:calc(var(--head_font)*var(--s));
+    }
+
+    .form__container .form__body {
+        min-height: calc(var(--body_size)*var(--s));
+    }
+
+    .form__field {
+        min-height: calc(var(--form__field)*var(--s));
+    }
+
+    .form__field>label {
+        font-size: calc(var(--form__field__label)*var(--s));
+    }
+
+    .form__field>input {
+        min-height: calc(var(--input__size)*var(--s));
+        font-size: calc(var(--input_font) *var(--s));
+    }
+
+    .button__container {
+        min-height: calc(var(--btn_container_size)*var(--s));
+    }
+
+    .button__container .button__login {
+        font-size: calc(var(--btn_font)*var(--s));
+        min-height: calc(var(--btn_height)*var(--s));
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .form__container {
+        min-height: calc(var(--form__container__size)*var(--m));
+        aspect-ratio: 15/20;
+    }
+
+    .form__container .form__head {
+        min-height: calc(var(--head_size)*var(--m));
+    }
+    .form__container .form__head .form__title {
+        font-size:calc(var(--head_font)*var(--m));
+    }
+
+    .form__container .form__body {
+        min-height: calc(var(--body_size)*var(--m));
+    }
+
+    .form__field {
+        min-height: calc(var(--form__field)*var(--m));
+    }
+
+    .form__field>label {
+        font-size: calc(var(--form__field__label)*var(--m));
+    }
+
+    .form__field>input {
+        min-height: calc(var(--input__size)*var(--m));
+        font-size: calc(var(--input_font) *var(--m));
+    }
+
+    .button__container {
+        min-height: calc(var(--btn_container_size)*var(--m));
+    }
+
+    .button__container .button__login {
+        font-size: calc(var(--btn_font)*var(--m));
+        min-height: calc(var(--btn_height)*var(--m));
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .form__container {
+        min-height: calc(var(--form__container__size)*var(--l));
+        aspect-ratio: 15/18;
+    }
+
+    .form__container .form__head {
+        min-height: calc(var(--head_size)*var(--l));
+    }
+    .form__container .form__head .form__title {
+        font-size:calc(var(--head_font)*var(--l));
+    }
+
+    .form__container .form__body {
+        min-height: calc(var(--body_size)*var(--l));
+    }
+
+    .form__field {
+        min-height: calc(var(--form__field)*var(--l));
+    }
+
+    .form__field>label {
+        font-size: calc(var(--form__field__label)*var(--l));
+    }
+
+    .form__field>input {
+        min-height: calc(var(--input__size)*var(--l));
+        font-size: calc(var(--input_font) *var(--l));
+    }
+
+    .button__container {
+        min-height: calc(var(--btn_container_size)*var(--l));
+    }
+
+    .button__container .button__login {
+        font-size: calc(var(--btn_font)*var(--l));
+        min-height: calc(var(--btn_height)*var(--l));
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .form__container {
+        min-height: calc(var(--form__container__size)*var(--xl));
+        aspect-ratio: 15/16;
+    }
+
+    .form__container .form__head {
+        min-height: calc(var(--head_size)*var(--xl));
+    }
+    .form__container .form__head .form__title {
+        font-size:calc(var(--head_font)*var(--xl));
+    }
+
+    .form__container .form__body {
+        min-height: calc(var(--body_size)*var(--xl));
+    }
+
+    .form__field {
+        min-height: calc(var(--form__field)*var(--xl));
+    }
+
+    .form__field>label {
+        font-size: calc(var(--form__field__label)*var(--xl));
+    }
+
+    .form__field>input {
+        min-height: calc(var(--input__size)*var(--xl));
+        font-size: calc(var(--input_font) *var(--xl));
+    }
+
+    .button__container {
+        min-height: calc(var(--btn_container_size)*var(--xl));
+    }
+
+    .button__container .button__login {
+        font-size: calc(var(--btn_font)*var(--xl));
+        min-height: calc(var(--btn_height)*var(--xl));
+    }
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+/* @media only screen and (max-width: 600px) {
+} */
