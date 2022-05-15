@@ -23,8 +23,8 @@
 }
 
 .form__container {
-    color: rgb(185, 188, 189);
-    background-color: rgb(252, 252, 252);
+    color: rgb(255, 255, 255);
+    background-color: rgba(231, 239, 243, 0.621);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +39,7 @@
 }
 
 .form__container .form__head {
-    background-color: white;
+    background-color: black;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     display: flex;
@@ -80,7 +80,9 @@
     color: rgb(185, 188, 189);
     border-radius: 25px;
     border: none;
-    box-shadow: inset 0px 1px 0px 1px rgba(0,0,0,0.1),inset 0px 0px 2px 0px rgba(0,0,0,0.1);
+    /* box-shadow: inset 0px 4px 7px -3px rgba(0, 0, 0, 0.1), inset 0px 23px 98px -82px rgba(0, 0, 0, 0.1); */
+    /* box-shadow: inset 0px 4px 7px -3px rgba(0,0,0,0.1),inset 0px 100px 98px -82px rgba(0,0,0,0.1); */
+    box-shadow: inset 0px 4px 7px -3px rgba(0, 0, 0, 0.1), inset 0px 100px 50px -63px rgba(0, 0, 0, 0.1);
     /* min-height: 2.5vw;
     font-size: 1.25vw; */
 }
@@ -110,7 +112,7 @@
     width: 100%;
     font-weight: bold;
     color: white;
-    background-color: blueviolet;
+    background: rgb(0, 0, 0);
 }
 
 /* If the screen size is 601px or more, set the font-size of <div> to 80px */
