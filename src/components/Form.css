@@ -9,12 +9,17 @@
     --input_font: 1.25vw;
     --btn_container_size: 7vw;
     --head_font: 3vw;
-    --form__container__size:35vw;
-    --xl:1;/* MENOR A 600px */
-    --l:1.5;/* entre 600px y 768px */
-    --m:2;/* entre 600px y 768px */
-    --s:2.5;/* entre 768px y 992px */
-    --xs:3;/* entre 992px y 1200px */
+    --form__container__size: 35vw;
+    --xl: 1;
+    /* MENOR A 600px */
+    --l: 1.5;
+    /* entre 600px y 768px */
+    --m: 2;
+    /* entre 600px y 768px */
+    --s: 2.5;
+    /* entre 768px y 992px */
+    --xs: 3;
+    /* entre 992px y 1200px */
 }
 
 .form__container {
@@ -73,8 +78,9 @@
 
 .form__field>input {
     color: rgb(185, 188, 189);
-    border-radius: 10px;
+    border-radius: 25px;
     border: none;
+    box-shadow: inset 0px 1px 0px 1px rgba(0,0,0,0.1),inset 0px 0px 2px 0px rgba(0,0,0,0.1);
     /* min-height: 2.5vw;
     font-size: 1.25vw; */
 }
@@ -118,8 +124,9 @@
     .form__container .form__head {
         min-height: calc(var(--head_size)*var(--xs));
     }
+
     .form__container .form__head .form__title {
-        font-size:calc(var(--head_font)*var(--xs));
+        font-size: calc(var(--head_font)*var(--xs));
     }
 
     .form__container .form__body {
@@ -158,8 +165,9 @@
     .form__container .form__head {
         min-height: calc(var(--head_size)*var(--s));
     }
+
     .form__container .form__head .form__title {
-        font-size:calc(var(--head_font)*var(--s));
+        font-size: calc(var(--head_font)*var(--s));
     }
 
     .form__container .form__body {
@@ -198,8 +206,9 @@
     .form__container .form__head {
         min-height: calc(var(--head_size)*var(--m));
     }
+
     .form__container .form__head .form__title {
-        font-size:calc(var(--head_font)*var(--m));
+        font-size: calc(var(--head_font)*var(--m));
     }
 
     .form__container .form__body {
@@ -238,8 +247,9 @@
     .form__container .form__head {
         min-height: calc(var(--head_size)*var(--l));
     }
+
     .form__container .form__head .form__title {
-        font-size:calc(var(--head_font)*var(--l));
+        font-size: calc(var(--head_font)*var(--l));
     }
 
     .form__container .form__body {
@@ -279,8 +289,9 @@
     .form__container .form__head {
         min-height: calc(var(--head_size)*var(--xl));
     }
+
     .form__container .form__head .form__title {
-        font-size:calc(var(--head_font)*var(--xl));
+        font-size: calc(var(--head_font)*var(--xl));
     }
 
     .form__container .form__body {
